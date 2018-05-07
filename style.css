@@ -1,0 +1,67 @@
+/* reset css */
+ul li{ list-style:none; border:0;}
+ul{ padding:0; margin:0;}
+h1,h2, h3, h4, h5, h6{ padding:0; margin:0;}
+.lf{float: left;}
+.rf{float: right;}
+#asiderf{font-size: 12px;}
+.clear{ clear: both; padding:0; margin:0; overflow:hidden;}
+a{ text-decoration:none; color: #7279B8;}
+
+.wrapper{ width:100%; height:100%; margin:0 auto;}
+.container{ width:90%; margin:0 auto;}
+body{ background:#; font-family: 'arial', helvetica;}
+
+.logo{ padding:10px;}
+
+form{ width:360px; margin:50px auto 0; padding:30px 40px 30px 40px; background: rgb(216, 210, 210);}
+form h3{ text-align:center; margin:0 0 40px 0; font-size:26px; line-height:30px; color:#7279B8;}
+form ul li{ width:374px; display:block; margin:0 0 20px 0; position:relative;}
+form ul li.btn{ text-align:center;}
+form ul li input{     width: 80%;
+    border: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 24px;
+    outline: 0;
+    padding: 3%;
+    vertical-align: top;
+    box-shadow: inset 0px 2px 9px #ccc;
+    background: transparent;
+    border-left: 0;}
+form ul li input:focus { outline: 2px solid #7279B8; box-shadow:none;}
+form ul li input.active { outline: 2px solid #7279B8; box-shadow:none;}
+form ul li.btn button{ padding:6px 60px 6px 60px; margin:0 5px; font-size:15px; line-height:18px; color:#7279B8; cursor:pointer; -webkit-border:2px solid #7279B8; -moz-border:2px solid #7279B8; border:2px solid #7279B8; background:transparent; cursor:pointer; outline:0; font-weight:bold;}
+form ul li.btn button:hover{ background-color:#7279B8; color:#fff;}
+form ul li label{font-size:15px; display:block; text-align:center; cursor:pointer;}
+/*form img{font-size:25px;color:#fff; background-color:#5D71AA; padding:3%; vertical-align:middle; text-align:center; width:7%;}*/
+form ul li.btn button.active{ background-color:#7279B8; color:#fff;}
+
+@media screen and (max-width: 480px) {
+  form{ width:80%; padding:5%; margin: 20px auto 0;} 
+  form ul li{ width:100%;}
+}
+@media screen and (max-width: 414px) {
+	
+	form ul li.btn button{ padding:5px 20px;}
+	form h3{ margin:0 0 20px 0; font-size:22px;}
+	form i.fa{font-size:18px; line-height:20px;}
+	form ul li input{font-size:14px; line-height:20px;}
+	.lf, .rf{float:none; margin:5px 0; text-align:center; }
+	#asiderf{font-size: 12px;}
+}
+
+
+@media screen and (max-width: 480px) {
+  form{ width:80%; padding:5%; margin: 20px auto 0;} 
+  form ul li{ width:100%;}
+}
+@media screen and (max-width: 414px) {
+    
+    form ul li.btn button{ padding:5px 20px;}
+    form h3{ margin:0 0 20px 0; font-size:22px;}
+    form i.fa{font-size:18px; line-height:20px;}
+    form ul li input{font-size:14px; line-height:20px;}
+    .lf, .rf{float:none; margin:5px 0; text-align:center;}
+
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+ * {box-sizing:border-box}
+.table-scroll {
+  position: relative;
+  top:85px;
+  max-width: 1280px;
+  width:100%;
+  margin: auto;
+  display:table;
+}
+.table-wrap {
+  width: 100%;
+  display:block;
+  height: 200px;
+  overflow: auto;
+}
+.table-scroll table {
+  width: 100%;
+  margin: auto;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.table-scroll th, .table-scroll td {
+  padding: 5px 10px;
+  border: 1px solid #000;
+  background: #fff;
+  vertical-align: top;
+}
+.table-scroll table.clone, .table-scroll table.clone2 {
+  position: absolute;
+  top: -85px;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+.table-scroll table.clone2 {
+  top: auto;
+  bottom: -85px;
+}
+.clone tbody, .clone tfoot {
+  visibility: hidden;
+  border-color: transparent;
+}
+.clone2 tbody, .clone2 thead {
+  visibility: hidden;
+  border-color: transparent;
+}
+.clone thead th, .clone2 tfoot th, .clone2 tfoot td {
+  background: #ccc;
+  visibility:visible;
+}
+.table-scroll thead td,
+.table-scroll thead th,
+.table-scroll tfoot td,
+.table-scroll tfoot th {height:0px;overflow:hidden;line-height:0;padding:0;border:none;}
+
+.clones thead td,
+.clones thead th,
+.clones tfoot td,
+.clones tfoot th {height:85px;vertical-align:middle;line-height:normal;padding: 5px 10px;}
+  </style>
+ 
+ <script>
+ jQuery(document).ready(function() {
+   jQuery(".main-table").clone(true).appendTo('#table-scroll').addClass('clone clones');
+   jQuery(".main-table.clone").clone(true).appendTo('#table-scroll').addClass('clone2 clones'); 
+ });
+ </script>
+ 
+</head>
+
+<body>
+	<div id="table-scroll" class="table-scroll">
+  <div class="table-wrap">
+    <table class="main-table">
+      <thead>
+        <tr>
+          <th scope="col">&nbsp;</th>
+          <th scope="col">Header 2 with longer text</th>
+          <th scope="col">Header 3</th>
+          <th scope="col">Header 4</th>
+          <th scope="col">Header 5</th>
+          <th scope="col">Header 6</th>
+          <th scope="col">Header 7</th>
+          <th scope="col">Header 8</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Left Column</th>
+          <td>Cell content<br> test
+          </td>
+          <td><a href="#">Cell content longer</a></td>
+          <td>Cell content with more content and more content</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+        </tr>
+        <tr>
+          <th>Left Column</th>
+          <td>Cell content</td>
+          <td>Cell content longer</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+        </tr>
+        <tr>
+          <th>Left Column</th>
+          <td>Cell content</td>
+          <td>Cell content longer</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+        </tr>
+        <tr>
+          <th>Left Column</th>
+          <td>Cell content</td>
+          <td>Cell content longer</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+        </tr>
+        <tr>
+          <th>Left Column</th>
+          <td>Cell content</td>
+          <td>Cell content longer</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+        </tr>
+        <tr>
+          <th>Left Column</th>
+          <td>Cell content</td>
+          <td>Cell content longer</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+        </tr>
+
+        <tr>
+          <th>Left Column</th>
+          <td>Cell content</td>
+          <td>Cell content longer</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+        </tr>
+        <tr>
+          <th>Left Column</th>
+          <td>Cell content</td>
+          <td>Cell content longer</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+        </tr>
+        <tr>
+          <th>Left Column</th>
+          <td>Cell content</td>
+          <td>Cell content longer</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+        </tr>
+        <tr>
+          <th>Left Column</th>
+          <td>Cell content</td>
+          <td>Cell content longer</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+        </tr>
+        <tr>
+          <th>Left Column</th>
+          <td>Cell content</td>
+          <td>Cell content longer</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+        </tr>
+        <tr>
+          <th>Left Column</th>
+          <td>Cell content</td>
+          <td>Cell content longer</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+          <td>Cell content</td>
+        </tr>
+
+
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>&nbsp;</th>
+          <td>Footer 2</td>
+          <td>Footer 3</td>
+          <td>Footer 4</td>
+          <td>Footer 5</td>
+          <td>Footer 6</td>
+          <td>Footer 7</td>
+          <td>Footer 8</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>
+</body>
+</html>
